@@ -1,0 +1,322 @@
+
+/* Core Styles */
+
+body{
+    margin: 0;
+    background-color: rgb(219,200,183);
+    font-family:'Ubuntu', sans-serif;
+    text-align: center;
+}
+  
+h1{
+    margin: 1rem 2rem 0 2rem;
+    font-family: 'Kreon', serif;
+    font-size: 30px;
+    color: rgb(143,132,130);
+}
+
+  
+p{
+    margin: 0;
+    padding: 1.5em;
+    font-weight: 300;
+}
+
+h2{
+    font-family: 'Kreon', serif;
+}
+
+
+
+/* ------------- HEADER ----------------*/
+
+header{
+    height: 30vh;
+    padding: 10px;
+    opacity: 0.8;
+    background-image: url("./resources/header@640x360.jpg");
+    background-repeat: no-repeat, repeat;
+    background-size: cover;   
+    display: flex;  
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+header i.material-icons{
+    font-size: 2rem;  
+}
+
+
+/* --------- Navigation -----------*/
+
+nav{
+    display:flex;
+    flex-direction: column; 
+    position: fixed;
+    right: 0;
+    background-color: rgb(183,203,194);
+    height: 100vh;
+    width: 50vw;
+    z-index: 2;
+    transition: right 0.25s ease-out;
+}
+
+.menu-hidden{
+    right: -100vw;
+}
+
+.hidden{
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.fade-layer{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+nav a{
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    color:  rgb(87, 86, 85);  
+    font-weight: bold;
+    padding: 1rem;
+    transition: background-color 0.2s;
+}
+
+nav a:hover{
+    background-color: rgba(0,0,0,0.25) 
+}
+
+
+/* ------------- MAIN/ CARDS -------------------*/
+
+.card img{
+    width: 100%;
+    height: auto;
+}
+
+.card{
+    margin: 2rem;
+    border: 0.3rem solid rgb(143,132,130);
+    background-color: #556273;
+}
+
+.card p{
+    font-size: 14px;
+
+}
+
+.button-card{
+	-moz-box-shadow: 1px 1px 2px 0px  rgb(183,203,194);
+	-webkit-box-shadow: 1px 1px 2px 0px  rgb(183,203,194);
+	box-shadow: 1px 1px 2px 0px  rgb(183,203,194);
+	background-color:  rgb(183,203,194);
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid  rgb(183,203,194);
+	display:inline-block;
+	cursor:pointer;
+    color: black;
+    font-family:'Ubuntu', sans-serif;
+	font-size:12px;
+	padding:4px 16px;
+	text-decoration:none;
+    margin-bottom: 2rem;
+}
+    
+.button-card :hover {
+	background-color: rgb(241,242,237);
+}
+
+/*-------------- Aside ----------------*/
+
+/* ----------- Welcome text --------------*/
+
+.profile-pic{
+    padding: 30px;
+    border-radius: 50%;
+}
+
+.welcome{
+    background-color: rgb(183,203,194); 
+   
+}
+
+
+/* ----------------Newsletter-------------*/
+
+.newsletter{
+    
+    margin: 2em 0;
+    padding:20px;
+    background-color: rgb(183,203,194); 
+}
+
+.newsletter p{
+    padding: 10px;
+}
+
+
+#button-submit{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    background-color: #556273;
+    color: white; 
+    border:none;
+}
+
+
+/* -------------------- footer ----------------*/
+
+
+footer{
+    height: 200px;
+    padding: 20px;
+    background-image: url("./resources/footer@640x427.jpg");
+    background-repeat: no-repeat, repeat;
+    background-size: cover;   
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  
+}
+
+footer a{
+    
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+
+
+
+
+
+@media only screen and (min-device-width: 1224px){
+
+
+
+p{
+    font-size: 5rem;
+}
+
+/*--------- HEADER --------------*/
+
+h1{
+    font-size:20rem;
+    font-weight: 700;
+    color: white;
+
+}   
+
+header{ 
+    background-image: url("./resources/background-header@1285x224.jpg");
+    opacity: 0.5;
+    background-repeat: no-repeat, repeat;
+    background-size: cover;   
+    justify-content: flex-end;
+    flex-direction: row;
+    border: 0;
+    font-size: 100px;
+}
+
+header i.material-icons{
+    display: none;
+}
+
+.fade-layer{
+    visibility: hidden;
+}
+
+
+/*------------ NAVIGATION --------------*/
+
+nav{
+    position: static;
+    height: 150px;
+    width: auto;
+    font-size: 70px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+
+/* --------------MAIN ------------*/
+
+main{
+    margin: 5rem;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 1fr;
+}
+
+main h1, h2{
+    font-size: 8rem;
+}
+
+
+
+.allcards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.card{
+    margin: 0 0 2rem;
+    width: 30%;
+}
+
+
+
+.card p{
+    margin: 0;
+    font-size: 5rem;
+}
+
+.button-card {
+    font-size: 5rem;
+}
+
+/*-------------Aside-----------*/
+
+.welcome{
+    font-size: 4;
+}
+
+.newsletter {
+    margin: 3em 0 2rem;
+}
+
+
+/* --------------FOOTER ------------------*/
+
+footer{
+    height: 600px;
+    padding: 0 200px;
+}
+
+footer a{
+    font-size: 100px;
+}
+
+
+
+}
+

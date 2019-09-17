@@ -3,121 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kreon:300,400,500,600,700|Ubuntu:300,400,500,700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="/style.css">
     <title>Book Blog</title>
 </head>
 <body>
-  
-        <header>
-            <i class="material-icons" id="menu-btn">menu</i>
+    <header>
+        <i class="material-icons" id="menu-btn">menu</i>
             <h1>Book Blog</h1>
-        </header>
-
-
-
+    </header>
+    
+    
+    
         <nav class="menu-hidden">
-            <a href="#">About</a>
-            <a href="#">News</a>
-            <a href="#">Genres</a>
-            <a href="#">Contact</a>
+            <a href="/index.html">Home</a>
+            <a href="/blog.html">Blog</a>
+            <a href="/genre.html">Genres</a>
+            <a href="https://www.google.com/">Contact</a>
         </nav>
-        <div class="fade-layer hidden"></div>
-
-
+            <div class="fade-layer hidden"></div>
+    
+    
         <main>
-            <section class="allcards">
-            <article class="card">
-                <img src="/resources/main-sparacino@640x320.jpg"> 
-                <h1>paragraph heading</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni autem minus sint Lorem ipsum dolor sit amet consectetur 
-                    adipisicing elit. Magnam sunt natus eveniet quasi non facilis!</p>
-                <button class="button-card">Read more...</button> 
-            </article>
-    
-    
-            <article class="card">
-                <img src="/resources/main-dante@640x320.jpg"> 
-                <h1>paragraph heading</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni autem minus sint. 
-                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit quod atque quia.</p>
-                <button class="button-card">Read more...</button> 
+            <div class="allcards">
+                <article class="card">
+                    <img src="/resources/main-sparacino@640x320.jpg"> 
+                        <h1>paragraph heading</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni autem minus sint Lorem ipsum dolor sit amet consectetur 
+                            adipisicing elit. Magnam sunt natus eveniet quasi non facilis!</p>
+                                <a href="/blog.html"><button class="button-card">Read more...</button></a>
+                </article>
+        
+        
+                <article class="card">
+                    <img src="/resources/main-dante@640x320.jpg"> 
+                        <h1>paragraph heading</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni autem minus sint. 
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit quod atque quia.</p>
+                                <a href="/blog.html"><button class="button-card">Read more...</button></a>  
+                </article>
+        
+                <article class="card">
+                    <img src="/resources/main-gill@640x320.jpg"> 
+                        <h1>paragraph heading</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni autem minus sint. 
+                            Lorem ipsum dolor sit amet.</p>
+                                <a href="/blog.html"><button class="button-card">Read more...</button></a> 
+                </article>
                 
-            </article>
     
-            <article class="card">
-                <img src="/resources/main-gill@640x320.jpg"> 
-                <h1>paragraph heading</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni autem minus sint. Lorem ipsum dolor sit amet.</p>
-                <button class="button-card">Read more...</button> 
+                <article class="card">
+                    <img src="/resources/main-kinfolk@640x320.jpg"> 
+                        <h1>paragraph heading</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni autem minus sint.</p>
+                                <a href="/blog.html"><button class="button-card">Read more...</button></a>
                 </article>
-            
-
-            <article class="card">
-                <img src="/resources/main-kinfolk@640x320.jpg"> 
-                <h1>paragraph heading</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni autem minus sint.</p>
-                <button class="button-card">Read more...</button> 
-            </article>
-
-
-            <article class="card">
+    
+    
+                <article class="card">
                     <img src="/resources/main-mccaughrean@640x320.jpg"> 
-                    <h1>paragraph heading</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni autem minus sint. 
-                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, architecto?</p>
-                    <button class="button-card">Read more...</button> 
+                        <h1>paragraph heading</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni autem minus sint. 
+                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, architecto?</p>
+                                <a href="/blog.html"><button class="button-card">Read more...</button></a> 
                 </article>
+    
+                <article class="card">
+                    <img src="/resources/main-goldberg@640x320.jpg"> 
+                        <h1>paragraph heading</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni autem minus sint. 
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            <a href="/blog.html"><button class="button-card">Read more...</button></a> 
+                </article>
+                    
+        </div>
+            
+           
+            <aside>
+                <section class="infobox">
+                    <img src="/resources/figure@130x130.png" class="profile-pic">
+                        <h2>Welcome</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi voluptate sapiente 
+                        ipsa dolorem ea, accusantium voluptatum porro deleniti dicta nam excepturi laudantium accusamus 
+                        quisquam et corporis.</p>
+                </section>
+    
+                <section class="infobox">
+                    <h2>Newsletter</h2>
+                        <p>Sign up for our weekly Newsletter to get information about new reviews, give-aways and more!</p>
+                        <form >
+                            <input type="email" name="emailaddress">
+                            <button type="button" id="button-submit">Sign up!</button>
+                          </form>
+                </section>
 
-            <article class="card">
-                <img src="/resources/main-goldberg@640x320.jpg"> 
-                <h1>paragraph heading</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni autem minus sint. 
-                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae perspiciatis facilis similique?</p>
-                <button class="button-card">Read more...</button> 
-            </article>
-        </section>
+                <section class="infobox">
+                    <h2>Book of the month</h2>
+                        <img src="/resources/main-sparacino@640x320.jpg"> 
+                            <p>this is the book of the month Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero 
+                            laudantium et corrupti temporibus. Dolorum, ab expedita, totam impedit laboriosam nam voluptatibus 
+                            placeat aut vel quam quibusdam sint praesentium alias dignissimos.</p>
+                                <a href="/blog.html"><button class="button-card">Read more...</button></a> 
+                </section>
+            </aside>
 
+        </main>
+    
+            <footer>
+                <a href="https://www.google.com/">Contact</a>
+                <a href="https://www.google.com/">More info</a>
+                <a href="https://www.google.com/">Social Media</a>
+            </footer>
       
-
-
-       
-        <aside>
-            <section class="welcome">
-                <img src="/resources/figure@130x130.png" class="profile-pic">
-                <h2>Welcome</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi voluptate sapiente 
-                ipsa dolorem ea, accusantium voluptatum porro deleniti dicta nam excepturi laudantium accusamus 
-                quisquam et corporis dolorum repellat exercitationem eaque ducimus iste, eum a impedit id. Culpa 
-                doloribus consequatur quas reiciendis. Exercitationem repudiandae, delectus magnam nobis ullam 
-                nemo error aliquid. Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing 
-                elebiim aspernatur quibusdam similique quod quaerat, repellendus autem reprehenderit, pariatur rem verita
-                tis. Error esse quibusdam modi? Ducimus commodi magni provident sint?. </p>
-            </section>
-
-            <section class="newsletter">
-                <h2>Newsletter</h2>
-                    <p>Sign up for our weekly Newsletter to get information about new reviews, give-aways and more!</p>
-                    <form >
-                        <input type="email" name="emailaddress">
-                        <button type="button" id="button-submit">Sign up!</button>
-                      </form>
-            </section>
-        </aside>
-    </main>
-
-        <footer>
-            <a href="url">Contact</a>
-            <a href="url">More info</a>
-            <a href="url">Social Media</a>
-        </footer>
-  
-    </div>
-
-    <script src="/resources/main.js"></script>
-
-
-</body>
-</html>
+        
+    
+        <script src="/resources/main.js"></script>
+    
+    
+    </body>
+    </html>
